@@ -5,7 +5,8 @@
   "scripts": {
     "build": "tsc",
     "start": "node dist/index.js",
-    "dev": "ts-node-dev --respawn --transpile-only src/index.ts"
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "gen": "plop --plopfile plopfile-loader.js"
   },
   "keywords": [],
   "author": "",
@@ -26,6 +27,7 @@
     "@types/cors": "^2.8.19",
     "@types/node": "^24.0.0",
     "globals": "^16.2.0",
+    "plop": "^4.0.1",
     "ts-node": "^10.9.2",
     "ts-node-dev": "^2.0.0"
   }

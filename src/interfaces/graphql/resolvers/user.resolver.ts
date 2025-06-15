@@ -1,4 +1,4 @@
-import { CreateUser } from "../../../applications/useCases/createUser.useCase";
+import { CreateUser } from "../../../applications/use-cases/CreateUser";
 import { IUserRepository } from "../../../domain/repositories/user.repository";
 
 export const userResolver = (repo: IUserRepository) => ({
