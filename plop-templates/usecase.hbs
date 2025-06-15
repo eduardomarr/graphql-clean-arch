@@ -5,7 +5,7 @@ export class Create{{pascal entity}} {
   constructor(private repo: I{{pascal entity}}Repository) {}
 
   async execute(input: Partial<{{pascal entity}}>) {
-    const item = new {{pascal entity}}(/* preencha attrs */);
+    const item = new {{pascal entity}}(/* fill attrs */);
     await this.repo.save(item);
     return item;
   }

@@ -1,7 +1,7 @@
 import { NodePlopAPI } from 'plop';
 
 export default function (plop: NodePlopAPI) {
-  // helper p/ nome em PascalCase
+  // helper for name and PascalCase
   interface PascalHelper {
     (txt: string): string;
   }
@@ -12,12 +12,12 @@ export default function (plop: NodePlopAPI) {
 
   // generator "usecase"
   plop.setGenerator('usecase', {
-    description: 'Novo use case + artefatos Clean Architecture',
+    description: 'New use case + artifacts Clean Architecture',
     prompts: [
       {
         type: 'input',
         name: 'entity',
-        message: 'Nome da entidade (PascalCase):',
+        message: 'Nome of Entity (PascalCase):',
       },
     ],
     actions: [
@@ -36,7 +36,7 @@ export default function (plop: NodePlopAPI) {
       // 3) Repository interface
       {
         type: 'add',
-        path: 'src/domain/repositories/I{{pascal entity}}Repository.ts',
+        path: 'src/domain/repositories/{{pascal entity}}Repository.ts',
         templateFile: 'plop-templates/repository.hbs',
       },
       // 4) In-memory repo
