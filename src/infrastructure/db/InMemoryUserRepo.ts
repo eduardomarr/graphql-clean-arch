@@ -1,7 +1,7 @@
-import { User } from "../../domain/entities/user.entity";
-import { IUserRepository } from "../../domain/repositories/user.repository";
+import { User } from "../../domain/entities/User";
+import { UserRepository } from "../../domain/repositories/userRepository";
 
-export class InMemoryUserRepo implements IUserRepository {
+export class InMemoryUserRepo implements UserRepository {
   private store = new Map<string, User>();
 
   async save(user: User) {

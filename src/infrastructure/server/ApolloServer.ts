@@ -6,9 +6,9 @@ import { ApolloServer } from '@apollo/server';
 import { ApolloServerPluginDrainHttpServer } from '@apollo/server/plugin/drainHttpServer';
 import { expressMiddleware } from '@as-integrations/express5';
 import 'reflect-metadata';
-import { InMemoryUserRepo } from '../database/InMemoryUserRepo';
 import { userResolver } from '../../interfaces/graphql/resolvers/user.resolver';
 import { typeDefs } from '../../interfaces/graphql/schemas'
+import { InMemoryUserRepo } from '../db/InMemoryUserRepo';
 
 
 export async function createExpressApp() {

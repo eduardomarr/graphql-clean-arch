@@ -24,7 +24,7 @@ export default function (plop: NodePlopAPI) {
       // 1) Use-case
       {
         type: 'add',
-        path: 'src/application/use-cases/Create{{pascal entity}}.ts',
+        path: 'src/applications/use-cases/Create{{pascal entity}}.ts',
         templateFile: 'plop-templates/usecase.hbs',
       },
       // 2) Entity
