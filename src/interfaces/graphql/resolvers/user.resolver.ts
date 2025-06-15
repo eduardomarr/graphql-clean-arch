@@ -1,7 +1,7 @@
 import { CreateUser } from "../../../applications/use-cases/CreateUser";
-import { IUserRepository } from "../../../domain/repositories/user.repository";
+import { UserRepository } from "../../../domain/repositories/userRepository";
 
-export const userResolver = (repo: IUserRepository) => ({
+export const userResolver = (repo: UserRepository) => ({
   Query: {
     user: (_: any, { id }: { id: string }) => repo.findById(id),
   },
