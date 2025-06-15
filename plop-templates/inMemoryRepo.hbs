@@ -1,7 +1,7 @@
-import { I{{pascal entity}}Repository } from '../../domain/repositories/I{{pascal entity}}Repository';
+import { {{pascal entity}}Repository } from '../../domain/repositories/{{pascal entity}}Repository';
 import { {{pascal entity}} } from '../../domain/entities/{{pascal entity}}';
 
-export class InMemory{{pascal entity}}Repo implements I{{pascal entity}}Repository {
+export class InMemory{{pascal entity}}Repo implements {{pascal entity}}Repository {
   private store = new Map<string, {{pascal entity}}>();
 
   async save(item: {{pascal entity}}) {

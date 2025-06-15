@@ -1,8 +1,8 @@
 import { {{pascal entity}} } from '../../domain/entities/{{pascal entity}}';
-import { I{{pascal entity}}Repository } from '../../domain/repositories/I{{pascal entity}}Repository';
+import { {{pascal entity}}Repository } from '../../domain/repositories/{{pascal entity}}Repository';
 
 export class Create{{pascal entity}} {
-  constructor(private repo: I{{pascal entity}}Repository) {}
+  constructor(private repo: {{pascal entity}}Repository) {}
 
   async execute(input: Partial<{{pascal entity}}>) {
     const item = new {{pascal entity}}(/* fill attrs */);
